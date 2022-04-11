@@ -1,4 +1,5 @@
 <div>
+
     <h3>Question 1: </h3>
     <table class="table table-striped">
         <thead>
@@ -29,26 +30,52 @@
     <h3>Question 4: </h3>
     <ul>
         @foreach($question4 as $quest4)
-            <li>{{$quest4["par_nom"]}} Agr_Nom: {{$quest4["agr_nom"]}}</li>
+            <li>{{$quest4["par_nom"]}}  <strong>Agr_Nom:</strong> {{$quest4["agr_nom"]}}</li>
         @endforeach
     </ul>
     <h3>Question 5: </h3>
     <ul>
         @foreach($question5 as $quest5)
-            <li> Nombre de jours: {{$quest5["int_nb_jours"]}}</li>
+            <li> <strong>Nombre de jours : </strong>{{$quest5["nb_jours"]}}</li>
         @endforeach
     </ul>
     <h3>Question 6: </h3>
     <ul>
         @foreach($question6 as $quest6)
-            <li>Debut d'intervention {{$quest6['int_debut']}} le nom de la parcelle concernée: {{$quest6['par_nom']}}</li>
+            <li><strong>Debut d'intervention :</strong> {{$quest6['int_debut']}} <strong>le nom de la parcelle concernée :</strong> {{$quest6['par_nom']}}</li>
         @endforeach
     </ul>
     <h3>Question 7: </h3>
     <ul>
         @foreach($question7 as $quest7)
-            <li>Debut d'intervention {{$quest6['int_Debut']}} le nom de la parcelle concernée: {{$quest6['par_nom']}} le nom de
-                l’employé: {{$quest6['emp_nom']}}</li>
+            <li><strong>Debut d'intervention</strong>  : {{$quest7['int_debut']}}
+                <strong>le nom de la parcelle concernée:</strong>   {{$quest7['par_nom']}}
+                <strong>le nom de l’employé :</strong> {{$quest7['emp_nom']}}</li>
         @endforeach
     </ul>
+    <h3>Question 8: </h3>
+    <ul>
+        @foreach($question8 as $quest8)
+            <li><strong>Affichez les interventions de l’employe Pernet : </strong>{{$quest8['int_debut']}}</li>
+        @endforeach
+    </ul>
+    <h3>Question 9: </h3>
+    <ul>
+
+        <li><strong>Calculez la superficie totale des parcelles :{{$question9}} </strong></li>
+
+    </ul>
+    <h3>Question 10: </h3>
+    <ul>
+
+        <li><strong>Affichez le nom de la plus grande parcelle : </strong>{{$question10}}</li>
+
+    </ul>
+    <h3>Question 11: </h3>
+    <ul>
+
+        <li><strong>Affichez le nom de la plus petite parcelle :</strong> {{$question11}}</li>
+
+    </ul>
+
 </div>
